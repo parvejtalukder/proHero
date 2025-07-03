@@ -124,6 +124,7 @@ header{
 .box-footer{
     height: 60px;
     background-color:rgb(0, 111, 202);
+    border-bottom: 6px solid rgb(0, 111, 202);
     border-top: 6px solid rgb(224, 71, 0);
     justify-content: center;
 }
