@@ -1,0 +1,16 @@
+*{
+    background-color: aliceblue;
+}
+header{
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    justify-content: center;
+    
+}
+.logo{
+    width: 200px;
+}
+.icon{
+    width: 25px;
+}
