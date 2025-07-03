@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>proHero</title>
+  <title>proHero | Welcome</title>
   <style>
     * {
       margin: 0;
@@ -15,19 +15,18 @@
       height: 100%;
       width: 100%;
       font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #1d1d1d, #0f2027);
+      flex-direction: column;
       color: #fff;
-      overflow: hidden;
     }
 
     h1 {
       font-size: 4rem;
-      letter-spacing: 3px;
+      animation: fadeIn 2s ease;
       position: relative;
-      animation: fadeIn 2s ease-in-out forwards;
     }
 
     h1::after {
@@ -35,34 +34,59 @@
       position: absolute;
       left: 0;
       top: 0;
-      color: #00f7ff;
       z-index: -1;
-      filter: blur(8px);
-      animation: glow 2s ease-in-out infinite alternate;
+      color: #0ff;
+      filter: blur(10px);
+      animation: glow 2s infinite alternate;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #0ff;
+      }
+      to {
+        text-shadow: 0 0 30px #0ff;
+      }
     }
 
     @keyframes fadeIn {
-      0% {
+      from {
         opacity: 0;
         transform: translateY(30px);
       }
-      100% {
+      to {
         opacity: 1;
         transform: translateY(0);
       }
     }
 
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #00f7ff;
-      }
-      to {
-        text-shadow: 0 0 25px #00f7ff;
-      }
+    .button {
+      margin-top: 40px;
+      padding: 12px 24px;
+      background-color: #00f7ff;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #00e0e0;
     }
   </style>
 </head>
 <body>
   <h1>proHero</h1>
+  <p>A front-end practice hub by Parvej Talukder</p>
+  <a href="/phtofficial/" class="button">Explore PHT Official</a>
 </body>
 </html>
