@@ -58,7 +58,7 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .hero-box{
-    background-image: url('/img/bg/43533.jpg');
+    background-image: url('img/bg/43533.jpg');
     background-color: rgb(17, 221, 221);
     background-position: center;
     background-repeat: none;
