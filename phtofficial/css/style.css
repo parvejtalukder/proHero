@@ -75,6 +75,7 @@ header{
     justify-content: center;
     justify-items: center;
     max-width: 1200px;
+    margin: 0 auto;
 }
 .box-img{
     image-orientation: flip;
