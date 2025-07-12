@@ -74,7 +74,7 @@ header{
     padding-bottom: 40px;
     justify-content: center;
     justify-items: center;
-    max-width: 1300px;
+    width:100%;
     margin: 0 auto;
 }
 .box-img{
