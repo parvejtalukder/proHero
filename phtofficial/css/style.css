@@ -3,6 +3,8 @@
     font-family: 'Times New Roman', Times, serif;
 }
 header{
+    position: sticky;
+    top:0px;
     background-color:rgb(0, 111, 202);
     width: auto;
     height: auto;
